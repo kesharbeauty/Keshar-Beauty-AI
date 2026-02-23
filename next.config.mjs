@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  turbopack: {},
   webpack: (config) => {
     const oneOf = config.module.rules.find(
       (rule) => typeof rule.oneOf === 'object'
